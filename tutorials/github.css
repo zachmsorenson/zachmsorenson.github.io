@@ -1,3 +1,21 @@
 p {
-  color: red;
+	font-family: Tahoma, Arial;
+}
+
+h2, h3 {
+	font-family: Garamond, Times-New-Roman;
+	font-weight: bold;
+}
+
+code {
+	background: hsl(220, 80%, 90%);
+	color: black;
+}
+
+.container-fluid {
+	background-color: "#510c76";
+}
+
+.chapter-text {
+	text-indent: 1em;
 }
