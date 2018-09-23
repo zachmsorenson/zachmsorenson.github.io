@@ -1,10 +1,13 @@
 p {
-	font-family: Tahoma, Arial;
+	font-family: Helvetica, Arial;
+	font-size: 1.1rem;
 }
 
 h2, h3 {
-	font-family: Garamond, Times-New-Roman;
+	font-family: Helvetica, Arial;
 	font-weight: bold;
+	font-size: 40px;
+	border-bottom: 1px solid lightgrey;
 }
 
 code {
@@ -12,10 +15,14 @@ code {
 	color: black;
 }
 
-.container-fluid {
-	background-color: "#510c76";
+.jumbotron {
+	background-color: #98999b;
 }
 
-.chapter-text {
-	text-indent: 1em;
+.container-fluid {
+	background-color: #510c76;
+}
+
+.chapter-indent {
+	margin-left: 0rem;
 }
