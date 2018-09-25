@@ -1,13 +1,21 @@
 p {
 	font-family: Helvetica, Arial;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	color: #262626;
+}
+
+h1 {
+	font-family: Helvetica, Arial;
+	font-size: 3rem;
+	font-weight: bold;
+
+	color: black;
 }
 
 h2, h3 {
 	font-family: Helvetica, Arial;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 2.4rem;
 	border-bottom: 1px solid lightgrey;
 	color: #262626;
 }
@@ -18,15 +26,21 @@ code {
 }
 
 .jumbotron {
-	background-color: #98999b;
+	height: 8rem;
+	/*background-color: #98999b;*/
+	background-color: #8348ad;
 }
 
 .container-fluid {
-	background-color: #510c76;
+	/*background-color: #510c76;*/
 }
 
 .italics {
 	font-style: italic;
 }
 
+.image_text {
+	font-size: .95rem;
+	color: #808080;
+}
 

@@ -8,85 +8,89 @@
   <link rel="stylesheet" href="github.css" />
 </head>
 <body>
-  <!--
-  <div id="header" class="jumbotron text-center" style="margin-bottom:0">
-    <h1>This is my header!</h1>
-    <p>We're fully responsive boys!</p>
-  </div>
-  -->
 
-  <div id="article" class="container-fluid">
-    <div class="row">
-      <div class="col-sm-10 offset-1" style="background-color: white">
-        <h2>Introduction</h2>
-        <div class="col-sm-12">
-          <p class="chapter-indent">
-            Git is a version-control system for tracking changes in source code and making it easier for multiple people to collaborate on a shared project. Github is a web-service for hosting project repositories using Git. This tutorial will take you through the basics of using Git and Github to create and manage your projects, and hosting a basic webpage through Github Pages.
-          </p>
-          <p>
-            A <span class="italics">repository</span> functions as the root directory that a project is located. Alongside all the source code or data you may need, the repository also holds some <span class="italics">metadata</span>. This is information necessary for the version control system - things like directory structure, project history, and the address of the repository. Git store this metadata in a folder called .git (the leading . indicates this is a hidden folder) and takes care of most of this on its own.
-          </p>
-          <p>
-            GitHub stores this repository online. It can then be downloaded (<span class="italics">cloned</span>) to a local machine where you can work on it. All changes (adding/removing files and editing existing files) are made to the local copy of the project. The user must then explicitly <span class="italics">push</span> their changes to the online repository in order to update it. This allows multiple users to work on the same project simultaneously. When users push their updates, Git the version control system attempts to <span class="italics">merge</span> differences automatically - if conflicts occur, the updating user is required to resolve them.
-          </p>
-        </div>
+    <div class="jumbotron text-center" >
+      <h1>CS Club Git Tutorial</h1>
+    </div>
 
-        <h2>1) Sign-Up for Github</h2>
-        <div class="row">
-          <div class="col-sm-8">
+    <div id="article" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-10 offset-1" style="background-color: white">
+          <h2>Introduction</h2>
+          <div class="col-sm-12">
+            <p class="chapter-indent">
+              Git is a version-control system for tracking changes in source code and making it easier for multiple people to collaborate on a shared project. Github is a web-service for hosting project repositories using Git. This tutorial will take you through the basics of using Git and Github to create and manage your projects, and hosting a basic webpage through Github Pages.
+            </p>
             <p>
-              GitHub is free to use - sign-up can be found <a href="https://github.com/join?source=header-home">here</a>. I would recommend using your student email for extra goodies that we get, namely the ability to create private repositories. The GitHub Student Developer Pack can be found <a href="https://education.github.com/pack">here</a> once you create your account.
+              A <span class="italics">repository</span> functions as the root directory that a project is located. Alongside all the source code or data you may need, the repository also holds some <span class="italics">metadata</span>. This is information necessary for the version control system - things like directory structure, project history, and the address of the repository. Git store this metadata in a folder called .git (the leading . indicates this is a hidden folder) and takes care of most of this on its own.
+            </p>
+            <p>
+              GitHub stores this repository online. It can then be downloaded (<span class="italics">cloned</span>) to a local machine where you can work on it. All changes (adding/removing files and editing existing files) are made to the local copy of the project. The user must then explicitly <span class="italics">push</span> their changes to the online repository in order to update it. This allows multiple users to work on the same project simultaneously. When users push their updates, Git the version control system attempts to <span class="italics">merge</span> differences automatically - if conflicts occur, the updating user is required to resolve them.
             </p>
           </div>
-          <div class="col-sm-4">
-            <img href="images/github_icon.png" alt="GitHub Logo" width="160" height="160">
+
+          <h2>1) Sign-Up for Github</h2>
+          <div class="row">
+            <div class="col-sm-9">
+              <p>
+                GitHub is free to use - sign-up can be found <a href="https://github.com/join?source=header-home" target="_blank">here</a>. I would recommend using your student email for extra goodies that we get, namely the ability to create private repositories. The GitHub Student Developer Pack can be found <a href="https://education.github.com/pack" target="_blank">here</a> once you create your account.
+              </p>
+            </div>
+            <div class="col-sm-3 text-center">
+              <img src="images/github_icon.png" alt="GitHub Logo" width="120" height="120">
+            </div>
           </div>
+
+          <h2>2) Download Git</h2>
+          <div class="row">
+            <div class="col-sm-9">
+              <p>
+                You must download Git to be able to clone repos from GitHub and use all the nice Git commands used for version control. Git can be downloaded <a href="https://git-scm.com/downloads" target="_blank">here</a>. You'll want to pick and choose the right version for your OS. Linux (and I believe Mac as well) and install and use Git straight in the terminal, while the Windows version installs a program called "Git Bash" - this is effectively just a Bash terminal you can use within Windows that gives you the exact same functionality. If you aren't use to using a command-line terminal yet (or just prefer a GUI) you can find a list of Git GUI clients on their site <a href="https://git-scm.com/downloads/guis" target="_blank">here</a> - GitHub Desktop is probably the most common one of these.
+              </p>
+            </div>
+            <div class="col-sm-3 text-center">
+              <img src="images/git_icon.png" alt="Git Logo" width="120" height="120">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 text-center">
+              <img src="images/screenshot_git-bash.png" width="480" height="280">
+              <p class="image_text">This is what the Git Bash terminal looks like...</p>
+            </div>            
+            <div class="col-sm-6 text-center">
+              <img src="images/screenshot_git-desktop.png" width="480" height="280">
+              <p class="image_text">...and this is GitHub Desktop</p>
+            </div>
+            <div class="col-sm-9"
+          </div>
+
+          <h2>3) Generate an SSH Key for Your Device</h2>
+          <h2>4) Getting Started on Github Pages</h2>
+          <p>
+            GitHub Pages allows you to host a static website for your account under the domain &lt;USERNAME&gt;.github.io. This is a great way to learn some basics of web development! It's a very simple way to put up some HTML and play around. In fact, the webpage you are reading right now is hosted through GitHub Pages!
+          </p><br>
+          <p>
+
+          </p>
+          <h2>5) Github Basics &amp; Commands</h2>
+
+          <h2>References</h2>
+          <div class="chapter-indent">
+            <p>Information and material for this tutorial was pulled from the following sources:</p>
+            <ul>
+              <li><a>Dr. Marrinan's Git Overview</a></li>
+              <li><a href="https://guides.github.com/activities/hello-world/">GitHub Hello-World</a></li>
+              <li><a href="https://pages.github.com/">GitHub Pages</a></li>
+            </ul>
+          </div>
+
+          <p>This shows off <code>Inline Code</code></p>
+          <pre>
+            <code>I am a code block</code>
+            <code>I can be multi-line</code>
+            <code>let x = x + y</code>
+          </pre>
+
         </div>
-
-        <h2>2) Download Git</h2>
-        <p>
-          You must download Git to be able to clone repos from GitHub and use all the nice Git commands used for version control. Git can be downloaded <a href="https://git-scm.com/downloads">here</a>. You'll want to pick and choose the right version for your OS. Linux (and I believe Mac as well) and install and use Git straight in the terminal, while the Windows version installs a program called "Git Bash" - this is effectively just a Bash terminal you can use within Windows that gives you the exact same functionality. If you aren't use to using a command-line terminal yet (or just prefer a GUI) you can find a list of Git GUI clients on their site <a href="https://git-scm.com/downloads/guis">here</a> - GitHub Desktop is probably the most common one of these.
-        </p>
-
-        <h2>3) Generate an SSH Key for Your Device</h2>
-        <h2>4) Getting Started on Github Pages</h2>
-        <p>
-          GitHub Pages allows you to host a static website for your account under the domain &lt;USERNAME&gt;.github.io. This is a great way to learn some basics of web development! It's a very simple way to put up some HTML and play around. In fact, the webpage you are reading right now is hosted through GitHub Pages!
-        </p><br>
-        <p>
-
-        </p>
-        <h2>5) Github Basics &amp; Commands</h2>
-
-        <h2>References</h2>
-        <div class="chapter-indent">
-          <p>Information and material for this tutorial was pulled from the following sources:</p>
-          <ul>
-            <li><a>Dr. Marrinan's Git Overview</a></li>
-            <li><a href="https://guides.github.com/activities/hello-world/">GitHub Hello-World</a></li>
-            <li><a href="https://pages.github.com/">GitHub Pages</a></li>
-          </ul>
-        </div>
-
-        <p>This shows off <code>Inline Code</code></p>
-        <pre>
-          <code>I am a code block</code>
-          <code>I can be multi-line</code>
-          <code>let x = x + y</code>
-        </pre>
-
       </div>
     </div>
-  </div>
-
-  <p>This page will contain a tutorial for starting up Github for CS Club 9/25</p>
-  <p>Items to flesh out:</p>
-  <ol>
-    <li>Signing up for Github</li>
-    <li>Downloading Git Bash (maybe optional?)</li>
-    <li>Setting up an SSH key for your device</li>
-    <li>Getting started with Github pages</li>
-    <li>Basics of Github (if there's time)</li>
-    <li>Test new</li>
-  </ol>
-</body>
