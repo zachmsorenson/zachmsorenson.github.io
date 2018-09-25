@@ -15,7 +15,7 @@
 
     <div id="article" class="container-fluid">
       <div class="row">
-        <div class="col-sm-10 offset-1" style="background-color: white">
+        <div class="col-sm-10 offset-1">
           <h2>Introduction</h2>
           <div class="col-sm-12">
             <p class="chapter-indent">
@@ -54,17 +54,29 @@
           </div>
           <div class="row">
             <div class="col-sm-6 text-center">
-              <img src="images/screenshot_git-bash.png" width="480" height="280">
+              <img src="images/screenshot_git-bash.PNG" width="480" height="280">
               <p class="image_text">This is what the Git Bash terminal looks like...</p>
             </div>            
             <div class="col-sm-6 text-center">
-              <img src="images/screenshot_git-desktop.png" width="480" height="280">
+              <img src="images/screenshot_git-desktop.PNG" width="480" height="280">
               <p class="image_text">...and this is GitHub Desktop</p>
             </div>
-            <div class="col-sm-9"
+            <div class="col-sm-12">
+              <p>
+                Note about using Git Bash for Windows: Git Bash uses Vim as its default text editor, which is notorious for being very unintuitive and hard-to-learn if you are new to using the command-line. During installation, you will be asked if you would like to change this - if you are new to using a command-line interface, I would recommend using a different editor. Nano is one of the more user-friendly terminal-based text editors, otherwise feel free to use something with a GUI (Notepad++, Sublime, VS Code, etc).
+              </p>
+              <p>
+                You can change Git's default text editor using the command <code>git config --global core.editor &quot;&lt;TEXT_EDITOR&gt;&quot;</code>
+              </p>
+            </div>
           </div>
 
           <h2>3) Generate an SSH Key for Your Device</h2>
+          <div class="row">
+            <div class="col-sm-12"
+          </div>
+
+
           <h2>4) Getting Started on Github Pages</h2>
           <p>
             GitHub Pages allows you to host a static website for your account under the domain &lt;USERNAME&gt;.github.io. This is a great way to learn some basics of web development! It's a very simple way to put up some HTML and play around. In fact, the webpage you are reading right now is hosted through GitHub Pages!
