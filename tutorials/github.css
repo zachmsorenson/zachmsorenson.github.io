@@ -20,9 +20,19 @@ h2, h3 {
 	color: #262626;
 }
 
-code {
-	background: hsl(280, 50%, 90%);
-	color: black;
+code, pre {
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    background: hsl(280, 50%, 90%);
+    color: black;
+    border: 1px solid #C7CDD1;
+    display: inline;
+    padding: 2px;
+    margin: 0 0 12px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;	
 }
 
 .jumbotron {
