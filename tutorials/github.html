@@ -112,12 +112,30 @@
             To create your account website, you have to make a repository called &lt;USERNAME&gt;.github.io, where &lt;USERNAME&gt; is your GitHub account name. GitHub SHOULD then automatically serve any .html files you specify within that repository - for instance, this tutorial is the file ~/tutorials/github.html in my account page repository. Also note that if you don't specify a file (i.e. browse to <span class="italics">username</span>.github.io/) the web server will try to serve index.html. This is standard on the web.
           </p>
 
-          <!-- CHAPTER 5 -->
+
+
+		<!-- CHAPTER  -->
+		<h2>) Resolving a Merge Conflict. </h2>
+		Often times when working with multiple people on the same project, you will get the situation where two people will make two different changes to the same section of code. When this happens a merge conflict is creted. 
+		You will most likely see something like <pre> CONFLICT (content): Merge conflict in &lt;FILE&gt; </pre> where file is the file containing the merge conflict. The issue here is that there were two changes to be made to the same bit of code, so git doesn't know which change should be made, and is now asking your to choose which change should be made. 
+		Once you open a file, a merge confict will likely look something like this (Unless your IDE does something special) 
+&nbsp; 
+	<pre> 	
+		&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+		this is one version of the code
+		=======
+		this is another verison of the code.
+		&gt;&gt;&gt;&gt;&gt;&gt;&gt; different_branch 
+		rest of your code. </pre> 
+
+	To resolve this you will need to decide which version of that code snippet you want to keep. You have to be careful that you don't break any other additional features that are dependent on this snippet of code. 
+
+
           <h2>5) Submitting code with pull requests. </h2>
               <p>
 			  When you are all finished writting your code, the typical method for submiting your code (especially for open source projects) is through submitting a pull request to the person that is maintaining the repostiory where the project you are working on is stored. Here is the methodology to do so.
 			  <ol>
-				  	<li> Create a fork of the repostiory that you want to work on. Which is basically just cloning your own copy of the repository, and then putting that into a new repositry that you own. You can do this by hitting the "Fork" button in the upper right hand of the page of the repository that you want to do work on. 
+				  	<li> Create a fork of the repostiory that you want to work on. You can do this by hitting the "Fork" button in the upper right hand of the page of the repository that you want to do work on. This is basically just cloning your own copy of the repository, and then putting that into a new repositry that you own. 
 					<li> From there you will get your own version of that repo that is now under your github name. Clone the version under your name onto your machine. 
 					<li> Use git add, git commit, and git push to make chages to your forked repository. 
 					<li> Sidenote: If you need to pull down upstream changes from the original repository, then you might have to add the original repository as a remote to your project. To do this do the following.  
@@ -131,8 +149,8 @@
 					<li> Once you have made all your changes and you are ready to submit your code, you will go to the github page of the original repository. 
 					<li> Click on the "New Pull Request" button that is next to the button where you select the branch you are viewing.
 					<li> Click on "Compare accross forks" 
-					<li> You will want to merge your fork into this repository, so the make sure the base is the branch you want to merge into, and the compare is your fork, and compare is the branch you want to merge into the base branch. 
-					<li> From there it will be pretty simple to submit your merge request; the maintainers of the repository will review your code, and if it is good enough they will accept your merge request and add your code into their repository. However, often times the maintainer may ask you to change something, or fix a bug before he/she pulls your code into their codebase, so make sure your code is well tested, and looks good! 
+					<li> You will want to merge your forked repository into this repository, so make sure the base is the branch you want to merge into, and the compare is your fork, and compare is the branch you want to merge into the base branch. 
+					<li> From there you will hit "Create pull request", then the maintainers of the repository will review your code, and if it is good enough they will accept your merge request and add your code into their repository. However, often times the maintainer may ask you to change something, or fix a bug before he/she pulls your code into their codebase, so make sure your code is well tested, and looks good! 
 			  </ol>
 			  </p>
 
