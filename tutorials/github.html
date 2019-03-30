@@ -112,26 +112,39 @@
             To create your account website, you have to make a repository called &lt;USERNAME&gt;.github.io, where &lt;USERNAME&gt; is your GitHub account name. GitHub SHOULD then automatically serve any .html files you specify within that repository - for instance, this tutorial is the file ~/tutorials/github.html in my account page repository. Also note that if you don't specify a file (i.e. browse to <span class="italics">username</span>.github.io/) the web server will try to serve index.html. This is standard on the web.
           </p>
 
+		<!-- CHAPTER  5 -->
+		<h2>5) Making changes </h2> 
+		<p>
+		There are a couple of common commands that you will need to know if you want to do practically anything with git. Which is git add, git commit, git push,  and git pull . 
+		<ul>
+			<li>  <pre>git add &lt;filename&gt;</pre> - Use this to tell git you want to upload a particular file, after you have made changes to that file. 
+			<li>  <pre>git commit</pre>  - This will group up your changes together with a message describing what you have changed. It's important to leave a describitve message so that people will know what you have changed. Using the command as is with no additional flags will open your default text editor, with an overview of the files you've changed, so that you will write your message describing your changes. Otherwise you can use the -m flag to write your message on the command line like this <pre> git commit -m "description of the changes you've made" </pre>  
+			<li> <pre>git push -u &lt;remote&gt; </pre>  This will upload all the changes you have commited to your repository on github. Remote is the repository that you want to upload to, usually "origin"
+				where origin is your own repository on 
+				Typically it will look like <pre> git push -u origin </pre> To look at all the remotes you have for your project you can use <pre>git remote</pre> 
+			<li> <pre>git pull &lt;remote&gt; </pre> Pull down changes from the specified remote, typically your own repository "origin". 
+		</ul>
+		</p>
 
-
-		<!-- CHAPTER  -->
-		<h2>) Resolving a Merge Conflict. </h2>
+		<!-- CHAPTER 6 -->
+		<h2>6) Resolving a Merge Conflict. </h2>
 		Often times when working with multiple people on the same project, you will get the situation where two people will make two different changes to the same section of code. When this happens a merge conflict is creted. 
 		You will most likely see something like <pre> CONFLICT (content): Merge conflict in &lt;FILE&gt; </pre> where file is the file containing the merge conflict. The issue here is that there were two changes to be made to the same bit of code, so git doesn't know which change should be made, and is now asking your to choose which change should be made. 
 		Once you open a file, a merge confict will likely look something like this (Unless your IDE does something special) 
-&nbsp; 
-	<pre> 	
-		&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-		this is one version of the code
-		=======
-		this is another verison of the code.
-		&gt;&gt;&gt;&gt;&gt;&gt;&gt; different_branch 
-		rest of your code. </pre> 
+		<br>	
+	 
+<pre>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+this is one version of the code
+=======
+this is another verison of the code.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; different_branch 
+rest of your code. </pre> 
+  		<br>	
+		<br>
+		To resolve this you will need to decide which version of that code snippet you want to keep. You have to be careful that you don't break any other additional features that are dependent on this snippet of code. You'll want to remove everything that isn't code ( &lt;, &gt;, =, and the names of the branches). Once you have done that you can <pre> git add &lt;FILE&gt; </pre> where FILE is the file where the merge conflict was, and then commit your changes. Once all that is done, the merge conflict has been resolved. 
+		</p>
 
-	To resolve this you will need to decide which version of that code snippet you want to keep. You have to be careful that you don't break any other additional features that are dependent on this snippet of code. 
-
-
-          <h2>5) Submitting code with pull requests. </h2>
+          <h2>7) Submitting code with pull requests. </h2>
               <p>
 			  When you are all finished writting your code, the typical method for submiting your code (especially for open source projects) is through submitting a pull request to the person that is maintaining the repostiory where the project you are working on is stored. Here is the methodology to do so.
 			  <ol>
@@ -155,7 +168,7 @@
 			  </p>
 
           <!-- CHAPTER 6 -->
-          <h2>6) Commands</h2>
+          <h2>8) Commands</h2>
           <p>This section is taken from Dr. Marrinan's Git Tutorial</p>
 
           <h4>Clone a Repository</h4>
